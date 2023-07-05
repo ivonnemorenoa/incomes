@@ -1,7 +1,36 @@
 <div class="container-lg">
-    <div class="header-incomes"><h2>Incomes</h2></div>
-        <div class="row g-0 text-center">
-        <div class="col-sm-6 col-md-6">Formulario</div>
-        <div class="col-6 col-md-6">Componentes</div>
-      </div>      
+  <div class="header-incomes">
+    <h2>Incomes</h2>
+  </div>
+  <div class="container-md">
+    <div class="row g-0 text-center">
+
+      <div class="row">
+        <div class="col-6">
+          
+          <app-input-group [label]="'Banco:'">
+            <app-bank></app-bank>
+          </app-input-group>
+
+        </div>
+      </div>.
+
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="col-6">
+          
+          <app-input-group [label]="'Monto:'">
+            <app-amount></app-amount>
+          </app-input-group>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
+
+
+
