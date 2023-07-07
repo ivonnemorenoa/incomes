@@ -1,3 +1,4 @@
+
 <div class="container-lg">
   <div class="header-incomes">
     <h2>Incomes</h2>
@@ -7,8 +8,8 @@
 
       <div class="row">
         <div class="col-6">
-          
-          <app-input-group [label]="'Banco:'">
+
+          <app-input-group [label]="'Bank:'">
             <app-bank></app-bank>
           </app-input-group>
 
@@ -20,17 +21,31 @@
 
       <div class="row">
         <div class="col-6">
-          
-          <app-input-group [label]="'Monto:'">
+
+          <app-input-group [label]="'Amount:'">
             <app-amount></app-amount>
           </app-input-group>
 
         </div>
+        <div class="col-6">
+
+          <app-input-group [label]="'Currency:'">
+            <app-currency></app-currency>
+          </app-input-group>
+          <br>
+          <div class="row">
+            <div class="col-6">
+              
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-secondary">Submit</button>
+            </div>
+          </div>
+        </div>
+
       </div>
+
 
     </div>
   </div>
 </div>
-
-
-

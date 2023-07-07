@@ -1,12 +1,13 @@
-<div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-        aria-expanded="false">
-        Banks
-    </button>
-    <ul class="dropdown-menu">
-        <li class="dropdown-item">BBVA</li>
-        <li class="dropdown-item">CITIBANAMEX</li>
-        <li class="dropdown-item">SCOTIABANK</li>
-        <li class="dropdown-item">HSBC</li>
-    </ul>
-</div>
+<form [formGroup]="formbank">
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Select bank
+        </button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item" formControlName="bbva">BBVA</li>
+            <li class="dropdown-item" formControlName="banamex">BANAMEX</li>
+            <li class="dropdown-item" formControlName="SCOTIABANK">SCOTIABANK</li>
+            <li class="dropdown-item" formControlName="hsbc">HSBC</li>
+        </ul>
+    </div>
+</form>

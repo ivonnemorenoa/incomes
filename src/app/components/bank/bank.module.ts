@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CurrencyComponent } from './currency.component';
+import { BankComponent } from './bank.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    CurrencyComponent
+    BankComponent
   ],
   exports: [
-    CurrencyComponent
+    BankComponent
   ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
   ]
-})
-export class CurrencyModule { }
+}) 
+export class BankModule { }

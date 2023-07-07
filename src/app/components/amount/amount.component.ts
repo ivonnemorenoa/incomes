@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-amount',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./amount.component.scss']
 })
 export class AmountComponent {
+
+  constructor() { }
+  
+    formamount = new FormGroup({
+      amount  : new FormControl('', Validators.required),
+    });
 
 }

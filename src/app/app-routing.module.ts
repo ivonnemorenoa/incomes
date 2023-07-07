@@ -8,11 +8,14 @@ import { BankComponent } from './components/bank/bank.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch : 'full' },
-  { path: 'home', component : HomeComponent },
-  { path: 'incomes', component : IncomesComponent },
-  { path: 'policy', component : PolicyComponent },
-  { path: 'status', component : StatusComponent },
-  { path: 'bank', component : BankComponent },
+  // { path: 'home', component : HomeComponent },
+  {
+    path: 'incomes',
+    loadChildren: () => import('./incomes/incomes.module').then(m => m.IncomesModule)
+  },
+  // { path: 'policy', component : PolicyComponent },
+  // { path: 'status', component : StatusComponent },
+  // { path: 'bank', component : BankComponent },
 ];
 
 @NgModule({

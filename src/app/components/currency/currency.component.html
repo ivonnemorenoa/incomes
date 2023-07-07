@@ -1,10 +1,11 @@
-<div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-        aria-expanded="false">
-        Currency
-    </button>
-    <ul class="dropdown-menu">
-        <li class="dropdown-item">USD</li>
-        <li class="dropdown-item">MXN</li>
-    </ul>
-</div>
+<form [formGroup]="formcurrency">
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Select currency
+        </button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item" formControlName="usd" >USD</li>
+            <li class="dropdown-item" formControlName="mxn">MXN</li>
+        </ul>
+    </div>
+</form>
