@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { InputGroupComponent } from './input-group.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
-
+import { AmountComponent } from './amount.component';
 
 @NgModule({
   declarations: [
-    InputGroupComponent
+    AmountComponent
   ],
   exports: [
-    InputGroupComponent
+    AmountComponent
   ],
   imports: [
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ]
 })
-export class InputGroupModule { }
+export class AmountModule { }

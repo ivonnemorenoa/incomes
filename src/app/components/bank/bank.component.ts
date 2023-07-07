@@ -10,8 +10,11 @@ export class BankComponent {
 
   constructor() { }
 
-  bank = new FormGroup({
-    BBVA  : new FormControl('', Validators.required),
+  formbank = new FormGroup({
+    bbva : new FormControl('', Validators.required),
+    banamex : new FormControl('', Validators.required),
+    scotiabank : new FormControl('', Validators.required),
+    hsbc : new FormControl('', Validators.required),
   });
 
 }
