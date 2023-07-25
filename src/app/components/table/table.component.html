@@ -1,0 +1,15 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let registro of registros">
+        <td>{{ registro.id }}</td>
+        <td class="text-end">{{ registro.precio | currency:'USD':'symbol':'1.2-2' }}</td>
+      </tr>
+    </tbody>
+ </table>
+  

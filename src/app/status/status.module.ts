@@ -5,9 +5,15 @@ import { InputGroupModule } from '../components/input-group/input-group.module';
 import { CurrencyModule } from '../components/currency/currency.module';
 import { BankModule } from '../components/bank/bank.module';
 import { AmountModule } from '../components/amount/amount.module';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 
+const routes: Routes = [
+  {
+    path: '',
+   component:StatusComponent,
+  }
+]
 @NgModule({
   declarations: [
     StatusComponent
@@ -16,10 +22,7 @@ import { RouterModule } from '@angular/router';
     StatusComponent
   ],
   imports: [    
-    RouterModule.forChild([{
-      path: '',
-      component: StatusComponent
-    }]),
+    RouterModule.forChild( routes ),
     CommonModule,
     InputGroupModule,
     CurrencyModule,
