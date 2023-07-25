@@ -1,13 +1,15 @@
 <form [formGroup]="formbank">
-    <div class="dropdown">
+    <select class="form-select" aria-label="Default select example" formControlName="dropdown-bank">
+    <div class="dropdown" >
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Select bank
         </button>
         <ul class="dropdown-menu">
-            <li class="dropdown-item" formControlName="bbva">BBVA</li>
-            <li class="dropdown-item" formControlName="banamex">BANAMEX</li>
-            <li class="dropdown-item" formControlName="SCOTIABANK">SCOTIABANK</li>
-            <li class="dropdown-item" formControlName="hsbc">HSBC</li>
+            <li class="dropdown-item" value="bbva">BBVA</li>
+            <li class="dropdown-item" value="banamex">BANAMEX</li>
+            <li class="dropdown-item" value="scotiabank">SCOTIABANK</li>
+            <li class="dropdown-item" value="hsbc">HSBC</li>
         </ul>
     </div>
+</select>
 </form>

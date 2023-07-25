@@ -8,13 +8,13 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class BankComponent {
 
-  constructor() { }
+  public formbank: FormGroup;
 
-  formbank = new FormGroup({
-    bbva : new FormControl('', Validators.required),
-    banamex : new FormControl('', Validators.required),
-    scotiabank : new FormControl('', Validators.required),
-    hsbc : new FormControl('', Validators.required),
-  });
+  constructor() {
+    this.formbank = new FormGroup({
+
+    });
+    
+   } 
 
 }
