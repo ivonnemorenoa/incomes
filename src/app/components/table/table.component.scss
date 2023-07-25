@@ -1,0 +1,59 @@
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos para los bordes redondeados de la tabla */
+  table {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Estilos para los botones */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilos para los botones en fila */
+  td button {
+    margin-right: 4px;
+  }
+  
+  /* Estilos para el hover en fila */
+  tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos para el borde del último elemento */
+  tr:last-child {
+    border-bottom: none;
+  }
+  
